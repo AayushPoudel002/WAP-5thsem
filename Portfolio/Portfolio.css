@@ -1,0 +1,71 @@
+body{
+    background-color: cadetblue !important;
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas: 
+        "header header"
+        "section aside"
+        "article aside"
+        "footer footer";
+
+}
+
+header,section,article,aside,footer{
+    background-color: bisque;
+    align-items: center;
+    display: flex;
+    justify-content: center;   
+}
+
+header{
+    grid-area: header;
+}
+
+section{
+    grid-area: section;
+    gap: 1rem;
+}
+
+article{
+    grid-area: article;
+
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+
+main{
+    display: contents; /*ignore Main*/
+}
+
+@media (max-width:700px){
+    body{
+        grid-template-areas:
+            "header"
+            "aside"
+            "section"
+            "article"
+            "footer"
+            ;
+    }
+    aside{
+        height:15rem;
+    }
+
+    section{
+        flex-direction: column;
+    }
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+

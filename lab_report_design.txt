@@ -1,0 +1,39 @@
+                    LAB1:-Html css basics
+OBJECTIVES
+    i)Portfolio
+    ii)Semantics html5
+    iii) Grid and flexbox
+    iv)Media query
+    v)Bootstrap implementation
+
+THEORY
+    ii)Semantics in html5
+    ->Intro defn importance/significance/purpose
+    ->Figure->semantic,Non Semantics
+    ->Source code template (html only)
+    ---->metadata->1 line defn
+    ---->semantic tags , header nav, section aside,
+    iii)Grid/flexbox
+    ->grid->when to use???
+    ->flexbox->when to use??
+    ->synatx of each in css
+    ->diff between them in 4 pts
+
+    iv)Media query
+    ->Intro->purpose,responsive UI->??
+    ->synatx
+
+    v)Bootstrap
+    ->intro,why needed/importance
+    ->links ->css link
+            ->js link
+    ->Components included in Lab,
+        ->cards
+        ->figure
+
+SOURCE CODE
+    i)Html
+    ii)css
+
+RESULT & CONCLUSION
+    -> self study
