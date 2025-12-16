@@ -82,7 +82,7 @@ let square = function(number){ ///Tradiotional Practice BAD, not hoisted
     return number*number //Anonymous function // return number**2
 }
 
-let cube = (number) =>{number*3}//Arrow function
+let cube = number =>{number*3}//Arrow function, here number is paramerter not variable
 
 console.log(square(5))
 console.log(cube(3))
