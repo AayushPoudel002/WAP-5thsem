@@ -14,7 +14,12 @@ const notes= document.querySelector('.notes')
     let value= localStorage.getItem(key) // gets the value corresponding to the key and stores in the local variable named value
     if(value) //if value corresponding to key is not null then only it adds the key and value from local storage to UI
     //this prevents the display of the null in the UI if teh sequence is interrupted in the middle
-        addNoteToDOM(key, value)
+    {   addNoteToDOM(key, value)
+        const isChecked = localStorage.getItem(`user${j}_checked`) === 'true';
+        const container = notes.querySelector(`[data-key="user${j}"]`);
+        const checkbox = container.querySelector('.checkbox');
+        checkbox.checked = isChecked;
+    }
  }
  
  //1.wap to counter number of clicks on add button
