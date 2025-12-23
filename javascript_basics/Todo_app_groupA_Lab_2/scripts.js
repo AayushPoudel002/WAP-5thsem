@@ -57,7 +57,8 @@ const notes= document.querySelector('.notes')
         //Delete the container on clicking delete and also delete data from local storage
         const container = e.target.parentElement //fetches the parent element of the selected element i.e button ,here
         let key = container.getAttribute('data-key')
-        localStorage.removeItem(key)
+        localStorage.removeItem(key)//removes the note from local storage
+        localStorage.removeItem(`${key}_checked`);//removes the checkbox state from local storage as well
 
         container.remove() //deletes the block of the removed container
     }
