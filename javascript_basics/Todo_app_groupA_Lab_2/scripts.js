@@ -44,6 +44,7 @@ const notes= document.querySelector('.notes')
 
     addNoteToDOM(key, value)
     console.log(NoteInput.value)
+    NoteInput.value='' //clears the input field after adding the note
 
  })
 
